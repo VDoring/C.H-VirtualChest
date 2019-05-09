@@ -1,0 +1,14 @@
+﻿/chesp create =>>>
+	create_virtual_inventory(player().'.inventory', 53, "- Your Secret VChest -")
+	get_virtual_inventories()
+	msg('create complete')
+<<<
+
+/chesp open =>>>
+	popen_inventory(player().'.inventory')
+<<<
+
+/chesp delete =>>>
+	delete_virtual_inventory(player().'.inventory')
+	msg('delete complete')
+<<<

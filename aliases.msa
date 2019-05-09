@@ -1,0 +1,4 @@
+﻿/chestxx =>>>
+	create_virtual_inventory(player(), chest, 54, null)
+	msg('complete')
+<<<

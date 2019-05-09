@@ -1,0 +1,17 @@
+﻿/chest create =>>>
+	@idcv = 0
+	create_virtual_inventory(@idcv, 53, "- Your VChest -")
+	get_virtual_inventories()
+	msg('create complete')
+<<<
+
+/chest open =>>>
+	@idcv = 0
+	popen_inventory(@idcv)
+<<<
+
+/chest delete =>>>
+	@idcv = 0
+	delete_virtual_inventory(@idcv)
+	msg('delete complete')
+<<<

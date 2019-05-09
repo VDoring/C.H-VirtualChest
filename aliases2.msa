@@ -1,0 +1,11 @@
+﻿/chest2x =>>>
+	create_virtual_inventory(@idxc, 53, "your another chest!")
+<<<
+/delch =>>>
+	@idxc = null
+	delete_virtual_inventory(@idxc)
+	msg('delete comp')
+<<<
+/opench =>>>
+	popen_inventory(player(), null)
+<<<

@@ -1,0 +1,35 @@
+﻿/chest cre =>>>
+	@idck = 0
+	create_virtual_inventory(@idck, 53, "- Your VChest -")
+	get_virtual_inventories()
+	msg('create complete')
+	
+	if(array_contains(get_virtual_inventories(), 0)) {
+	die('ALL Set!')
+	} else if(!array_contains(get_virtual_inventories(), 0)) {
+		@2th = 2
+		create_virtual_inventory(@2th, 53, "ERROR 2th VChest")
+		get_virtual_inventories()
+		msg('Complete, But Check PLZ')
+	}
+<<<
+
+/chest opn =>>>
+	@idck = 0
+	if(array_contains(get_virtual_inventories(), 0)) {
+	popen_inventory(@idck)
+	msg('Best Complete')
+	} else if(array_contains(get_virtual_inventories(), 2)) {
+	@2th = 2
+	popen_inventory(@2th)
+	msg('Complete')
+	}
+<<<
+
+/chest del =>>>
+	@idck = 0
+	@2th = 2
+	delete_virtual_inventory(@idck)
+	delete_virtual_inventory(@2th)
+	msg('delete complete')
+<<<
